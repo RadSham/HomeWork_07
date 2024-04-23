@@ -21,7 +21,6 @@ object Data {
             categoriesList.add(CategoryEntity(entry.key, entry.value, colors[catNum], null))
             catNum++
         }
-        println(categoriesList)
         return categoriesList.toList()
     }
 
@@ -40,7 +39,6 @@ object Data {
         } finally {
             br?.close()
         }
-        println(spendList)
         return spendList
     }
 }

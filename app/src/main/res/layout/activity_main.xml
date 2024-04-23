@@ -9,9 +9,9 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <otus.homework.customview.CategoryGraphic
+    <otus.homework.customview.PinChart
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </otus.homework.customview.CategoryGraphic>
+    </otus.homework.customview.PinChart>
 
 </FrameLayout>

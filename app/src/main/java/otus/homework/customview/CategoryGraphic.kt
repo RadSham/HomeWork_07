@@ -25,7 +25,6 @@ class CategoryGraphic @JvmOverloads constructor(
         colors = getColors()
         spendingsList.clear()
         spendingsList.addAll(makeSpendingsList(context))
-        println(spendingsList.size)
 
         maxValue = spendingsList.maxOf { it.amount.toDouble() }
         minValue = spendingsList.minOf { it.amount.toDouble() }
@@ -68,7 +67,6 @@ class CategoryGraphic @JvmOverloads constructor(
         for (i in 0 until spendingsList.size) {
             y = ((spendingsList[i].amount.toDouble() - minValue) * hStep).toFloat()
             path.lineTo(x, y)
-            println("${spendingsList[i].amount} $x $y")
             x += wStep
         }
 
